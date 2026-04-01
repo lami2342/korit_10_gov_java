@@ -7,7 +7,7 @@ public class Teacher {
 
     private Teacher() {}
 
-    private Teacher(String name, int age) {
+    public Teacher(String name, int age) {
         this.name = name;
         this.age = age;
         this.월급 = 1000000;
@@ -22,6 +22,4 @@ public class Teacher {
     private void 월급계산(int 세전월급){
         this.월급 = (int) (세전월급-세전월급 * 0.1);
     }
-
-
 }

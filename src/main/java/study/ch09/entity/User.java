@@ -44,11 +44,11 @@ public class User {
     }
 
 
-    public boolean getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(boolean username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 }
