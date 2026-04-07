@@ -1,0 +1,23 @@
+package study.ch19;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ex01 {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> scores = new ArrayList<>(List.of(85, 92, 78, 96, 88));
+        System.out.println("전체 점수: " + scores);
+
+        double avg = 0;
+        int max = scores.get(0);
+        for (int s : scores) {
+            avg += s;
+            if (s > max) max = s;
+        }
+        avg /= scores.size();
+
+        System.out.printf("평균: %.1f%n", avg);
+        System.out.println("최고 점수: " + max);
+    }
+}
