@@ -18,7 +18,6 @@ public class OrderMain {
                 )
         );
 
-        Order order1 = Order.builder().ordernumber(1).orderDetails().orderDateTime().build();
-        orderList.add(order1);
+
     }
 }

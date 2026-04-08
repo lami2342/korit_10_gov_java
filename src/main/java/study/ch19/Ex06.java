@@ -1,9 +1,10 @@
 package study.ch19;
 
 import lombok.Builder;
+import lombok.Data;
 
 import java.util.*;
-
+@Data
 @Builder
 class Student{
 
@@ -13,25 +14,6 @@ class Student{
     private int engScore;
     private int mathScore;
 
-    public String getName() {
-        return name;
-    }
-
-    public int getStudentYear() {
-        return studentYear;
-    }
-
-    public int getKorScore() {
-        return korScore;
-    }
-
-    public int getEngScore() {
-        return engScore;
-    }
-
-    public int getMathScore() {
-        return mathScore;
-    }
 }
 
 
